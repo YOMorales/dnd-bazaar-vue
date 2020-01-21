@@ -1,0 +1,2008 @@
+{
+    "bp_weapons": {
+        "simple_melee_weapons": [
+        ],
+        "simple_ranged_weapons": [
+        ],
+        "martial_melee_weapons": [
+        ],
+        "martial_ranged_weapons": [
+        ]
+    },
+    "bp_armor": {
+        "light_armor": [
+        ],
+        "medium_armor": [
+        ],
+        "heavy_armor": [
+        ],
+        "shields": [
+        ]
+    },
+    "bp_gear": {
+        "general": [
+        ]
+    },
+    "weapons": {
+        "simple_melee_weapons": [
+          {
+            "id": 1,
+            "subcategory": "simple_melee_weapons",
+            "name": "Club",
+            "cost": 1,
+            "cost_cur": "sp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d4",
+            "dmg_type": "B",
+            "properties": [
+              "Light"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 2,
+            "subcategory": "simple_melee_weapons",
+            "name": "Dagger",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d4",
+            "dmg_type": "P",
+            "properties": [
+              "Finesse",
+              "Light",
+              "Thrown (range 20/60)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 3,
+            "subcategory": "simple_melee_weapons",
+            "name": "Greatclub",
+            "cost": 2,
+            "cost_cur": "sp",
+            "weight": 10,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "B",
+            "properties": [
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 4,
+            "subcategory": "simple_melee_weapons",
+            "name": "Handaxe",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "S",
+            "properties": [
+              "Light",
+              "Thrown (range 20/60)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 5,
+            "subcategory": "simple_melee_weapons",
+            "name": "Javelin",
+            "cost": 5,
+            "cost_cur": "sp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "P",
+            "properties": [
+              "Thrown (range 30/120)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 6,
+            "subcategory": "simple_melee_weapons",
+            "name": "Light hammer",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d4",
+            "dmg_type": "B",
+            "properties": [
+              "Light",
+              "Thrown (range 20/60)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 7,
+            "subcategory": "simple_melee_weapons",
+            "name": "Mace",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "B",
+            "properties": null,
+            "notes": ""
+          },
+          {
+            "id": 8,
+            "subcategory": "simple_melee_weapons",
+            "name": "Quarterstaff",
+            "cost": 2,
+            "cost_cur": "sp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "B",
+            "properties": [
+              "Versatile (1d8)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 9,
+            "subcategory": "simple_melee_weapons",
+            "name": "Sickle",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d4",
+            "dmg_type": "S",
+            "properties": [
+              "Light"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 10,
+            "subcategory": "simple_melee_weapons",
+            "name": "Spear",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "P",
+            "properties": [
+              "Thrown (range 20/60)",
+              "Versatile (1d8)"
+            ],
+            "notes": ""
+          }
+        ],
+        "simple_ranged_weapons": [
+          {
+            "id": 11,
+            "subcategory": "simple_ranged_weapons",
+            "name": "Crossbow, light",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "P",
+            "properties": [
+              "Ammunition (range 80/320)",
+              "Loading",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 12,
+            "subcategory": "simple_ranged_weapons",
+            "name": "Dart",
+            "cost": 5,
+            "cost_cur": "cp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d4",
+            "dmg_type": "P",
+            "properties": [
+              "Finesse",
+              "Thrown (range 20/60)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 13,
+            "subcategory": "simple_ranged_weapons",
+            "name": "Shortbow",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "P",
+            "properties": [
+              "Ammunition (range 80/320)",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 14,
+            "subcategory": "simple_ranged_weapons",
+            "name": "Sling",
+            "cost": 1,
+            "cost_cur": "sp",
+            "weight": 0,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d4",
+            "dmg_type": "B",
+            "properties": [
+              "Ammunition (range 30/120)"
+            ],
+            "notes": ""
+          }
+        ],
+        "martial_melee_weapons": [
+          {
+            "id": 15,
+            "subcategory": "martial_melee_weapons",
+            "name": "Battleaxe",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "S",
+            "properties": [
+              "Versatile (1d10)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 16,
+            "subcategory": "martial_melee_weapons",
+            "name": "Flail",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "B",
+            "properties": null,
+            "notes": ""
+          },
+          {
+            "id": 17,
+            "subcategory": "martial_melee_weapons",
+            "name": "Glaive",
+            "cost": 20,
+            "cost_cur": "gp",
+            "weight": 6,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d10",
+            "dmg_type": "S",
+            "properties": [
+              "Heavy",
+              "Reach",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 18,
+            "subcategory": "martial_melee_weapons",
+            "name": "Greataxe",
+            "cost": 30,
+            "cost_cur": "gp",
+            "weight": 7,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d12",
+            "dmg_type": "S",
+            "properties": [
+              "Heavy",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 19,
+            "subcategory": "martial_melee_weapons",
+            "name": "Greatsword",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": 6,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "2d6",
+            "dmg_type": "S",
+            "properties": [
+              "Heavy",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 20,
+            "subcategory": "martial_melee_weapons",
+            "name": "Halberd",
+            "cost": 20,
+            "cost_cur": "gp",
+            "weight": 6,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d10",
+            "dmg_type": "S",
+            "properties": [
+              "Heavy",
+              "Reach",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 21,
+            "subcategory": "martial_melee_weapons",
+            "name": "Lance",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 6,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d12",
+            "dmg_type": "P",
+            "properties": [
+              "Reach",
+              "Special"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 22,
+            "subcategory": "martial_melee_weapons",
+            "name": "Longsword",
+            "cost": 15,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "S",
+            "properties": [
+              "Versatile (1d10)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 23,
+            "subcategory": "martial_melee_weapons",
+            "name": "Maul",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 10,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "2d6",
+            "dmg_type": "B",
+            "properties": [
+              "Heavy",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 24,
+            "subcategory": "martial_melee_weapons",
+            "name": "Morningstar",
+            "cost": 15,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "P",
+            "properties": null,
+            "notes": ""
+          },
+          {
+            "id": 25,
+            "subcategory": "martial_melee_weapons",
+            "name": "Pike",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 18,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d10",
+            "dmg_type": "P",
+            "properties": [
+              "Heavy",
+              "Reach",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 26,
+            "subcategory": "martial_melee_weapons",
+            "name": "Rapier",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "P",
+            "properties": [
+              "Finesse"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 27,
+            "subcategory": "martial_melee_weapons",
+            "name": "Scimitar",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "S",
+            "properties": [
+              "Finesse",
+              "Light"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 28,
+            "subcategory": "martial_melee_weapons",
+            "name": "Shortsword",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "P",
+            "properties": [
+              "Finesse",
+              "Light"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 29,
+            "subcategory": "martial_melee_weapons",
+            "name": "Trident",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "P",
+            "properties": [
+              "Thrown (range 20/60)",
+              "Versatile (1d8)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 30,
+            "subcategory": "martial_melee_weapons",
+            "name": "War pick",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "P",
+            "properties": null,
+            "notes": ""
+          },
+          {
+            "id": 31,
+            "subcategory": "martial_melee_weapons",
+            "name": "Warhammer",
+            "cost": 15,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "B",
+            "properties": [
+              "Versatile (1d10)"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 32,
+            "subcategory": "martial_melee_weapons",
+            "name": "Whip",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d4",
+            "dmg_type": "S",
+            "properties": [
+              "Finesse",
+              "Reach"
+            ],
+            "notes": ""
+          }
+        ],
+        "martial_ranged_weapons": [
+          {
+            "id": 33,
+            "subcategory": "martial_ranged_weapons",
+            "name": "Blowgun",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1",
+            "dmg_type": "P",
+            "properties": [
+              "Ammunition (range 25/100)",
+              "Loading"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 34,
+            "subcategory": "martial_ranged_weapons",
+            "name": "Crossbow, hand",
+            "cost": 75,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d6",
+            "dmg_type": "P",
+            "properties": [
+              "Ammunition (range 30/120)",
+              "Light",
+              "Loading"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 35,
+            "subcategory": "martial_ranged_weapons",
+            "name": "Crossbow, heavy",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": 18,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d10",
+            "dmg_type": "P",
+            "properties": [
+              "Ammunition (range 100/400)",
+              "Heavy",
+              "Loading",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 36,
+            "subcategory": "martial_ranged_weapons",
+            "name": "Longbow",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": "1d8",
+            "dmg_type": "P",
+            "properties": [
+              "Ammunition (range 150/600)",
+              "Heavy",
+              "Two-handed"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 37,
+            "subcategory": "martial_ranged_weapons",
+            "name": "Net",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/weapons/",
+            "dmg": 0,
+            "dmg_type": "",
+            "properties": [
+              "Special",
+              "Thrown (range 5/15)"
+            ],
+            "notes": ""
+          }
+        ]
+    },
+    "armor": {
+        "light_armor": [
+          {
+            "id": 1,
+            "subcategory": "light_armor",
+            "name": "Padded",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 8,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 11,
+            "max_dex": null,
+            "strength": null,
+            "properties": [
+              "Disadvantage"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 2,
+            "subcategory": "light_armor",
+            "name": "Leather",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 10,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 11,
+            "max_dex": null,
+            "strength": null,
+            "properties": null,
+            "notes": ""
+          },
+          {
+            "id": 3,
+            "subcategory": "light_armor",
+            "name": "Studded Leather",
+            "cost": 45,
+            "cost_cur": "gp",
+            "weight": 13,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 12,
+            "max_dex": null,
+            "strength": null,
+            "properties": null,
+            "notes": ""
+          }
+        ],
+        "medium_armor": [
+          {
+            "id": 4,
+            "subcategory": "medium_armor",
+            "name": "Hide",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 12,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 12,
+            "max_dex": 2,
+            "strength": null,
+            "properties": null,
+            "notes": ""
+          },
+          {
+            "id": 5,
+            "subcategory": "medium_armor",
+            "name": "Chain Shirt",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": 20,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 13,
+            "max_dex": 2,
+            "strength": null,
+            "properties": null,
+            "notes": ""
+          },
+          {
+            "id": 6,
+            "subcategory": "medium_armor",
+            "name": "Scale Mail",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": 45,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 14,
+            "max_dex": 2,
+            "strength": null,
+            "properties": [
+              "Disadvantage"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 7,
+            "subcategory": "medium_armor",
+            "name": "Breastplate",
+            "cost": 400,
+            "cost_cur": "gp",
+            "weight": 20,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 14,
+            "max_dex": 2,
+            "strength": null,
+            "properties": null,
+            "notes": ""
+          },
+          {
+            "id": 8,
+            "subcategory": "medium_armor",
+            "name": "Half Plate",
+            "cost": 750,
+            "cost_cur": "gp",
+            "weight": 40,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 15,
+            "max_dex": 2,
+            "strength": null,
+            "properties": [
+              "Disadvantage"
+            ],
+            "notes": ""
+          }
+        ],
+        "heavy_armor": [
+          {
+            "id": 9,
+            "subcategory": "heavy_armor",
+            "name": "Ring Mail",
+            "cost": 30,
+            "cost_cur": "gp",
+            "weight": 40,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 14,
+            "max_dex": 0,
+            "strength": null,
+            "properties": [
+              "Disadvantage"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 10,
+            "subcategory": "heavy_armor",
+            "name": "Chain Mail",
+            "cost": 75,
+            "cost_cur": "gp",
+            "weight": 55,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 16,
+            "max_dex": 0,
+            "strength": null,
+            "properties": [
+              "Disadvantage"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 11,
+            "subcategory": "heavy_armor",
+            "name": "Splint Mail",
+            "cost": 200,
+            "cost_cur": "gp",
+            "weight": 60,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 17,
+            "max_dex": 0,
+            "strength": null,
+            "properties": [
+              "Disadvantage"
+            ],
+            "notes": ""
+          },
+          {
+            "id": 12,
+            "subcategory": "heavy_armor",
+            "name": "Plate Mail",
+            "cost": null,
+            "cost_cur": "gp",
+            "weight": 65,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 18,
+            "max_dex": 0,
+            "strength": null,
+            "properties": [
+              "Disadvantage"
+            ],
+            "notes": ""
+          }
+        ],
+        "shields": [
+          {
+            "id": 13,
+            "subcategory": "shields",
+            "name": "Shield",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 6,
+            "desc": "",
+            "thumb": "public/img/armor/",
+            "ac": 2,
+            "max_dex": 0,
+            "strength": null,
+            "properties": null,
+            "notes": ""
+          }
+        ]
+    },
+    "gear": {
+        "general": [
+          {
+            "id": 1,
+            "subcategory": "general",
+            "name": "Abacus",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 2,
+            "subcategory": "general",
+            "name": "Acid (vial)",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 3,
+            "subcategory": "general",
+            "name": "Alchemist's fire (flask)",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 4,
+            "subcategory": "general",
+            "name": "Arrows (20)",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 5,
+            "subcategory": "general",
+            "name": "Blowgun needles (50)",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 6,
+            "subcategory": "general",
+            "name": "Crossbow bolts (20)",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 1.5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 7,
+            "subcategory": "general",
+            "name": "Sling bullets (20)",
+            "cost": 4,
+            "cost_cur": "cp",
+            "weight": 1.5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 8,
+            "subcategory": "general",
+            "name": "Amulet",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 9,
+            "subcategory": "general",
+            "name": "Antitoxin (vial)",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 10,
+            "subcategory": "general",
+            "name": "Crystal",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 11,
+            "subcategory": "general",
+            "name": "Orb",
+            "cost": 20,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 12,
+            "subcategory": "general",
+            "name": "Rod",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 13,
+            "subcategory": "general",
+            "name": "Staff",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 14,
+            "subcategory": "general",
+            "name": "Wand",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 15,
+            "subcategory": "general",
+            "name": "Backpack",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 16,
+            "subcategory": "general",
+            "name": "Ball bearings (bag of 1,000)",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 17,
+            "subcategory": "general",
+            "name": "Barrel",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 70,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 18,
+            "subcategory": "general",
+            "name": "Basket",
+            "cost": 4,
+            "cost_cur": "sp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 19,
+            "subcategory": "general",
+            "name": "Bedroll",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 7,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 20,
+            "subcategory": "general",
+            "name": "Bell",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 21,
+            "subcategory": "general",
+            "name": "Blanket",
+            "cost": 5,
+            "cost_cur": "sp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 22,
+            "subcategory": "general",
+            "name": "Block and tackle",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 23,
+            "subcategory": "general",
+            "name": "Book",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 24,
+            "subcategory": "general",
+            "name": "Bottle, glass",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 25,
+            "subcategory": "general",
+            "name": "Bucket",
+            "cost": 5,
+            "cost_cur": "cp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 26,
+            "subcategory": "general",
+            "name": "Caltrops (bag of 20)",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 27,
+            "subcategory": "general",
+            "name": "Candle",
+            "cost": 1,
+            "cost_cur": "cp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 28,
+            "subcategory": "general",
+            "name": "Case, crossbow bolt",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 29,
+            "subcategory": "general",
+            "name": "Case, map or scroll",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 30,
+            "subcategory": "general",
+            "name": "Chain (10 feet)",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 10,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 31,
+            "subcategory": "general",
+            "name": "Chalk (1 piece)",
+            "cost": 1,
+            "cost_cur": "cp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 32,
+            "subcategory": "general",
+            "name": "Chest",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 25,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 33,
+            "subcategory": "general",
+            "name": "Clothes, common",
+            "cost": 5,
+            "cost_cur": "sp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 34,
+            "subcategory": "general",
+            "name": "Clothes, costume",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 35,
+            "subcategory": "general",
+            "name": "Clothes, fine",
+            "cost": 15,
+            "cost_cur": "gp",
+            "weight": 6,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 36,
+            "subcategory": "general",
+            "name": "Clothes, traveler's",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 37,
+            "subcategory": "general",
+            "name": "Component pouch",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 38,
+            "subcategory": "general",
+            "name": "Crowbar",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 39,
+            "subcategory": "general",
+            "name": "Sprig of mistletoe",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 40,
+            "subcategory": "general",
+            "name": "Totem",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 41,
+            "subcategory": "general",
+            "name": "Wooden staff",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 42,
+            "subcategory": "general",
+            "name": "Yew wand",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 43,
+            "subcategory": "general",
+            "name": "Emblem",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 44,
+            "subcategory": "general",
+            "name": "Fishing tackle",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 45,
+            "subcategory": "general",
+            "name": "Flask or tankard",
+            "cost": 2,
+            "cost_cur": "cp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 46,
+            "subcategory": "general",
+            "name": "Grappling hook",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 47,
+            "subcategory": "general",
+            "name": "Hammer",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 48,
+            "subcategory": "general",
+            "name": "Hammer, sledge",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 10,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 49,
+            "subcategory": "general",
+            "name": "Holy water (flask)",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 50,
+            "subcategory": "general",
+            "name": "Hourglass",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 51,
+            "subcategory": "general",
+            "name": "Hunting trap",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 25,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 52,
+            "subcategory": "general",
+            "name": "Ink (1 ounce bottle)",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 53,
+            "subcategory": "general",
+            "name": "Ink pen",
+            "cost": 2,
+            "cost_cur": "cp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 54,
+            "subcategory": "general",
+            "name": "Jug or pitcher",
+            "cost": 2,
+            "cost_cur": "cp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 55,
+            "subcategory": "general",
+            "name": "Kit, climber's",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 12,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 56,
+            "subcategory": "general",
+            "name": "Kit, disguise",
+            "cost": 25,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 57,
+            "subcategory": "general",
+            "name": "Kit, forgery",
+            "cost": 15,
+            "cost_cur": "gp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 58,
+            "subcategory": "general",
+            "name": "Kit, herbalism",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 59,
+            "subcategory": "general",
+            "name": "Kit, healer's",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 60,
+            "subcategory": "general",
+            "name": "Kit, mess",
+            "cost": 2,
+            "cost_cur": "sp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 61,
+            "subcategory": "general",
+            "name": "Kit, poisoner's",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 62,
+            "subcategory": "general",
+            "name": "Ladder (10-foot)",
+            "cost": 1,
+            "cost_cur": "sp",
+            "weight": 25,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 63,
+            "subcategory": "general",
+            "name": "Lamp",
+            "cost": 5,
+            "cost_cur": "sp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 64,
+            "subcategory": "general",
+            "name": "Lantern, bullseye",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 65,
+            "subcategory": "general",
+            "name": "Lantern, hooded",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 66,
+            "subcategory": "general",
+            "name": "Lock",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 67,
+            "subcategory": "general",
+            "name": "Magnifying glass",
+            "cost": 100,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 68,
+            "subcategory": "general",
+            "name": "Manacles",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 6,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 69,
+            "subcategory": "general",
+            "name": "Mirror, steel",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 0.5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 70,
+            "subcategory": "general",
+            "name": "Oil (flask)",
+            "cost": 1,
+            "cost_cur": "sp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 71,
+            "subcategory": "general",
+            "name": "Paper (one sheet)",
+            "cost": 2,
+            "cost_cur": "sp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 72,
+            "subcategory": "general",
+            "name": "Parchment (one sheet)",
+            "cost": 1,
+            "cost_cur": "sp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 73,
+            "subcategory": "general",
+            "name": "Perfume (vial)",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 74,
+            "subcategory": "general",
+            "name": "Pick, miner's",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 10,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 75,
+            "subcategory": "general",
+            "name": "Piton",
+            "cost": 5,
+            "cost_cur": "cp",
+            "weight": 0.25,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 76,
+            "subcategory": "general",
+            "name": "Poison, basic (vial)",
+            "cost": 100,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 77,
+            "subcategory": "general",
+            "name": "Pole (10-foot)",
+            "cost": 5,
+            "cost_cur": "cp",
+            "weight": 7,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 78,
+            "subcategory": "general",
+            "name": "Pot, iron",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 10,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 79,
+            "subcategory": "general",
+            "name": "Potion of healing",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": 0.5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 80,
+            "subcategory": "general",
+            "name": "Pouch",
+            "cost": 5,
+            "cost_cur": "sp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 81,
+            "subcategory": "general",
+            "name": "Quiver",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 82,
+            "subcategory": "general",
+            "name": "Ram, portable",
+            "cost": 4,
+            "cost_cur": "gp",
+            "weight": 35,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 83,
+            "subcategory": "general",
+            "name": "Rations (1 day)",
+            "cost": 5,
+            "cost_cur": "sp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 84,
+            "subcategory": "general",
+            "name": "Reliquary",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 2,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 85,
+            "subcategory": "general",
+            "name": "Robes",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 4,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 86,
+            "subcategory": "general",
+            "name": "Rope, hempen (50 feet)",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 10,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 87,
+            "subcategory": "general",
+            "name": "Rope, silk (50 feet)",
+            "cost": 10,
+            "cost_cur": "gp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 88,
+            "subcategory": "general",
+            "name": "Sack",
+            "cost": 1,
+            "cost_cur": "cp",
+            "weight": 0.5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 89,
+            "subcategory": "general",
+            "name": "Scale, merchant's",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 90,
+            "subcategory": "general",
+            "name": "Sealing wax",
+            "cost": 5,
+            "cost_cur": "sp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 91,
+            "subcategory": "general",
+            "name": "Shovel",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 92,
+            "subcategory": "general",
+            "name": "Signal whistle",
+            "cost": 5,
+            "cost_cur": "cp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 93,
+            "subcategory": "general",
+            "name": "Signet ring",
+            "cost": 5,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 94,
+            "subcategory": "general",
+            "name": "Soap",
+            "cost": 2,
+            "cost_cur": "cp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 95,
+            "subcategory": "general",
+            "name": "Spellbook",
+            "cost": 50,
+            "cost_cur": "gp",
+            "weight": 3,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 96,
+            "subcategory": "general",
+            "name": "Spikes, iron (10)",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 97,
+            "subcategory": "general",
+            "name": "Spyglass",
+            "cost": null,
+            "cost_cur": "gp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 98,
+            "subcategory": "general",
+            "name": "Tent, two-person",
+            "cost": 2,
+            "cost_cur": "gp",
+            "weight": 20,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 99,
+            "subcategory": "general",
+            "name": "Tinderbox",
+            "cost": 5,
+            "cost_cur": "sp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 100,
+            "subcategory": "general",
+            "name": "Torch",
+            "cost": 1,
+            "cost_cur": "cp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 101,
+            "subcategory": "general",
+            "name": "Vial",
+            "cost": 1,
+            "cost_cur": "gp",
+            "weight": null,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 102,
+            "subcategory": "general",
+            "name": "Waterskin",
+            "cost": 2,
+            "cost_cur": "sp",
+            "weight": 5,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          },
+          {
+            "id": 103,
+            "subcategory": "general",
+            "name": "Whetstone",
+            "cost": 1,
+            "cost_cur": "cp",
+            "weight": 1,
+            "desc": "",
+            "thumb": "public/img/gear/",
+            "notes": ""
+          }
+        ]
+    }
+}
