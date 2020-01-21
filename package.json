@@ -22,7 +22,12 @@
   "author": "YOMorales <yomorales@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.1",
+    "bulma": "^0.8.0",
+    "bulma-tooltip": "^3.0.2",
     "core-js": "^3.4.4",
+    "json-server": "^0.15.1",
+    "lodash": "^4.17.15",
     "vue": "^2.6.10"
   },
   "devDependencies": {
