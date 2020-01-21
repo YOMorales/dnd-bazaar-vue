@@ -1,12 +1,26 @@
 {
   "name": "dnd-bazaar-vue",
   "version": "0.1.0",
+  "description": "A simple app for managing equipment in DnD 5e games.",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "watch": "npm run build -- --watch",
+    "lint": "vue-cli-service lint",
+    "json_server": "json-server --watch data/equipment.json"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YOMorales/dnd-bazaar-vue.git"
+  },
+  "keywords": [
+    "dnd",
+    "5e",
+    "equipment"
+  ],
+  "author": "YOMorales <yomorales@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "core-js": "^3.4.4",
     "vue": "^2.6.10"
