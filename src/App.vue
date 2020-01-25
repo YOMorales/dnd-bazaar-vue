@@ -1,16 +1,17 @@
 <template>
   <div id="app">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <WidgetMoney title="Money Spent"/>
+    <WidgetMoney title="Money Gained"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import WidgetMoney from './components/WidgetMoney.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    WidgetMoney
   }
 }
 </script>
