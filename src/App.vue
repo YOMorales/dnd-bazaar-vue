@@ -1,17 +1,16 @@
 <template>
   <div id="app">
-    <WidgetMoney title="Money Spent"/>
-    <WidgetMoney title="Money Gained"/>
+      <SectionWidgets />
   </div>
 </template>
 
 <script>
-import WidgetMoney from './components/WidgetMoney.vue';
+import SectionWidgets from './components/SectionWidgets.vue';
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    WidgetMoney
+      SectionWidgets
   }
 }
 </script>

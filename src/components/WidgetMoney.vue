@@ -1,6 +1,6 @@
 <template>
     <div class="tile is-child notification content" style="background: #EEDB74;">
-        <h6>{{ widgetTitle }}</h6>
+        <h6>{{ title }}</h6>
         <ul class="unstyled">
             <li>
                 <span class="tag is-dark">
