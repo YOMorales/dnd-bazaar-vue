@@ -6,7 +6,12 @@
                 <div class="card">
                     <div class="card-content content">
                         <p>Lorem ipsum dolor sit amet consectetuer adipiscing elit.</p>
-                        <BaseSelect />
+                        <BaseSelect
+                            id="select_shop"
+                            class="is-small is-info"
+                            v-bind:options="shop_types"
+                            v-on:option-selected="$emit('shop-selected', $event)"
+                            />
                     </div>
                 </div>
             </div>
@@ -42,7 +47,18 @@ export default {
     BaseSelect,
     WidgetWeight,
     WidgetMoney
-  }
+  },
+  data() {
+    return {
+        shop_types: [
+            {value: 'weapons', name: 'Weapon Shop'},
+            {value: 'armor', name: 'Armory'},
+            {value: 'gear', name: 'Gear'}
+        ],
+    }
+  },
+    methods: {
+    }
 }
 </script>
 
