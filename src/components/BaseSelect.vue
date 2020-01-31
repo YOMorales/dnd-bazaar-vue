@@ -1,28 +1,32 @@
 <template>
-    <div id='select_shop' class="select is-small is-info is-rounded is-gap">
-        <select v-model="selected_shop" v-on:change="loadItems">
-            <option v-for="shop in shop_types" v-bind:key="`option-${shop.value}`" v-bind:value="shop.value">{{ shop.name }}</option>
+    <div class="select is-rounded is-gap">
+        <select
+            v-model="selected_value"
+            v-on:change="$emit('option-selected', selected_value)">
+            <option
+                v-for="option in options"
+                v-bind:key="`option-${option.value}`"
+                v-bind:value="option.value"
+                >
+                {{ option.name }}
+            </option>
         </select>
     </div>
 </template>
 
 <script>
 export default {
-  name: 'WidgetWeight',
-    data() {
-        return {
-            selected_shop: null,
-            shop_types: [
-                {value: 'weapons', name: 'Weapon Shop'},
-                {value: 'armor', name: 'Armory'},
-                {value: 'gear', name: 'Gear'}
-            ],
+  name: 'BaseSelect',
+    props: {
+        options: {
+            type: Array,
+            required: true,
+            default: () => []
         }
     },
-    methods: {
-        loadItems() {
-            // had to disable this because console gave me fatal error
-            console.log('loadItems for: ' + this.selected_shop);
+    data() {
+        return {
+            selected_value: null,
         }
     }
 }
