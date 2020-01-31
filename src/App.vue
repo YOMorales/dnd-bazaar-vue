@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <SectionWidgets />
+      <SectionWidgets v-on:shop-selected="loadItems" />
   </div>
 </template>
 
@@ -11,7 +11,14 @@ export default {
   name: 'App',
   components: {
       SectionWidgets
-  }
+  },
+  mounted() {
+  },
+    methods: {
+        loadItems(selected_value) {
+            console.log('loadItems for: ' + selected_value);
+        }
+    }
 }
 </script>
 
