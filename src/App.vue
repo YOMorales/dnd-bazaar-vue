@@ -1,28 +1,34 @@
 <template>
   <div id="app">
       <SectionWidgets v-on:shop-selected="loadItems" />
+
+      <SectionTables v-bind:selected_shop='selected_shop' v-bind:shop_items='shop_items' v-bind:backpack_items='backpack_items' />
   </div>
 </template>
 
 <script>
 import axios from 'axios';
 import SectionWidgets from './components/SectionWidgets.vue';
+import SectionTables from './components/SectionTables.vue';
 
 const rest_api_url = 'http://localhost:3000/';
 
 export default {
   name: 'App',
   components: {
-      SectionWidgets
+      SectionWidgets,
+      SectionTables
   },
   data() {
       return {
-         shop_items: [],
-         backpack_items: [],
+         selected_shop: '',
+         shop_items: {},
+         backpack_items: {},
       }
   },
     methods: {
         loadItems(selected_shop) {
+            this.selected_shop = selected_shop;
             // gets items for the shop
             axios.get(rest_api_url + selected_shop)
                 .then(response => {
