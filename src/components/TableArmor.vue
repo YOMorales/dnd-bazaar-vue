@@ -30,9 +30,14 @@
                     </span>
                 </td>
                 <td class='has-text-right'>
-                    <a class='btn_add_item'>
+                    <a v-if="is_backpack == false" class='btn_add_item'>
                         <span class='icon has-text-success'>
                             <i class='fas fa-plus-square'></i>
+                        </span>
+                    </a>
+                    <a v-else class='btn_subtract_item'>
+                        <span class='icon has-text-danger'>
+                            <i class='fas fa-minus-square'></i>
                         </span>
                     </a>
                 </td>
