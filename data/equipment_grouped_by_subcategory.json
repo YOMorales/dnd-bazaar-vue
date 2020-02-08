@@ -1,8 +1,23 @@
 {
-    "bp_weapons": [
-    ],
-    "bp_armor": [
-        {
+    "bp_weapons": {
+        "simple_melee_weapons": [
+        ],
+        "simple_ranged_weapons": [
+        ],
+        "martial_melee_weapons": [
+        ],
+        "martial_ranged_weapons": [
+        ]
+    },
+    "bp_armor": {
+        "light_armor": [
+        ],
+        "medium_armor": [
+        ],
+        "heavy_armor": [
+        ],
+        "shields": [
+          {
             "id": 13,
             "subcategory": "shields",
             "name": "Shield",
@@ -16,11 +31,15 @@
             "strength": null,
             "properties": null,
             "notes": ""
-        }
-    ],
-    "bp_gear": [
-    ],
-    "weapons": [
+          }
+        ]
+    },
+    "bp_gear": {
+        "general": [
+        ]
+    },
+    "weapons": {
+        "simple_melee_weapons": [
           {
             "id": 1,
             "subcategory": "simple_melee_weapons",
@@ -183,7 +202,9 @@
               "Versatile (1d8)"
             ],
             "notes": ""
-          },
+          }
+        ],
+        "simple_ranged_weapons": [
           {
             "id": 11,
             "subcategory": "simple_ranged_weapons",
@@ -251,7 +272,9 @@
               "Ammunition (range 30/120)"
             ],
             "notes": ""
-          },
+          }
+        ],
+        "martial_melee_weapons": [
           {
             "id": 15,
             "subcategory": "martial_melee_weapons",
@@ -547,7 +570,9 @@
               "Reach"
             ],
             "notes": ""
-          },
+          }
+        ],
+        "martial_ranged_weapons": [
           {
             "id": 33,
             "subcategory": "martial_ranged_weapons",
@@ -637,8 +662,10 @@
             ],
             "notes": ""
           }
-    ],
-    "armor": [
+        ]
+    },
+    "armor": {
+        "light_armor": [
           {
             "id": 1,
             "subcategory": "light_armor",
@@ -685,7 +712,9 @@
             "strength": null,
             "properties": null,
             "notes": ""
-          },
+          }
+        ],
+        "medium_armor": [
           {
             "id": 4,
             "subcategory": "medium_armor",
@@ -764,7 +793,9 @@
               "Disadvantage"
             ],
             "notes": ""
-          },
+          }
+        ],
+        "heavy_armor": [
           {
             "id": 9,
             "subcategory": "heavy_armor",
@@ -832,7 +863,9 @@
               "Disadvantage"
             ],
             "notes": ""
-          },
+          }
+        ],
+        "shields": [
           {
             "id": 13,
             "subcategory": "shields",
@@ -848,8 +881,10 @@
             "properties": null,
             "notes": ""
           }
-    ],
-    "gear": [
+        ]
+    },
+    "gear": {
+        "general": [
           {
             "id": 1,
             "subcategory": "general",
@@ -1983,5 +2018,6 @@
             "thumb": "public/img/gear/",
             "notes": ""
           }
-    ]
+        ]
+    }
 }
