@@ -22,8 +22,8 @@ export default {
   data() {
       return {
          selected_shop: '',
-         shop_items: {},
-         backpack_items: {},
+         shop_items: [],
+         backpack_items: [],
       }
   },
     methods: {

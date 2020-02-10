@@ -11,11 +11,9 @@
                     <div class="card-content">
                     <div class="content" id='container_shop_items'>
 
-                    <template v-for="(items, subcategory) in shop_items">
-                        <TableArmor v-if='items.length > 0 && selected_shop == "armor"' :items='items' :key='`table_${subcategory}`' :id='`table_${subcategory}`' />
-                        <TableWeapons v-else-if='items.length > 0 && selected_shop == "weapons"' :items='items' :key='`table_${subcategory}`' :id='`table_${subcategory}`' />
-                        <TableGear v-else-if='items.length > 0 && selected_shop == "gear"' :items='items' :key='`table_${subcategory}`' :id='`table_${subcategory}`' />
-                    </template>
+                    <TableArmor v-if='shop_items.length > 0 && selected_shop == "armor"' :items='shop_items' :id='`table_${selected_shop}`' />
+                    <TableWeapons v-else-if='shop_items.length > 0 && selected_shop == "weapons"' :items='shop_items' :id='`table_${selected_shop}`' />
+                    <TableGear v-else-if='shop_items.length > 0 && selected_shop == "gear"' :items='shop_items' :id='`table_${selected_shop}`' />
 
                     </div>
                     </div>
@@ -34,11 +32,9 @@
                     <div class="card-content">
                     <div class="content" id='container_backpack_items'>
 
-                    <template v-for="(items, subcategory) in backpack_items">
-                        <TableArmor v-if='items.length > 0 && selected_shop == "armor"' :is_backpack='true' :items='items' :key='`table_bp_${subcategory}`' :id='`table_bp_${subcategory}`' />
-                        <TableWeapons v-else-if='items.length > 0 && selected_shop == "weapons"' :is_backpack='true' :items='items' :key='`table_bp_${subcategory}`' :id='`table_bp_${subcategory}`' />
-                        <TableGear v-else-if='items.length > 0 && selected_shop == "gear"' :is_backpack='true' :items='items' :key='`table_bp_${subcategory}`' :id='`table_bp_${subcategory}`' />
-                    </template>
+                    <TableArmor v-if='backpack_items.length > 0 && selected_shop == "armor"' :is_backpack='true' :items='backpack_items' :id='`table_bp_${selected_shop}`' />
+                    <TableWeapons v-else-if='backpack_items.length > 0 && selected_shop == "weapons"' :is_backpack='true' :items='backpack_items' :id='`table_bp_${selected_shop}`' />
+                    <TableGear v-else-if='backpack_items.length > 0 && selected_shop == "gear"' :is_backpack='true' :items='backpack_items' :id='`table_bp_${selected_shop}`' />
 
                     </div>
                     </div>
@@ -74,14 +70,14 @@ export default {
             default: null
         },
         shop_items: {
-            type: Object,
+            type: Array,
             required: true,
-            default: () => {}
+            default: () => []
         },
         backpack_items: {
-            type: Object,
+            type: Array,
             required: true,
-            default: () => {}
+            default: () => []
         },
     },
 }
