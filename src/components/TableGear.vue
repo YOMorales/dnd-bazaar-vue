@@ -4,6 +4,7 @@
             <tr>
                 <th data-sortable="false" width="24"></th>
                 <th class="is-size-8">Name</th>
+                <th class="is-size-8">Category</th>
                 <th class="is-size-8">Cost</th>
                 <th data-sortable="false" width="72"></th>
             </tr>
@@ -16,6 +17,7 @@
                     </span>
                 </td>
                 <td class="is-size-8">{{item.name}}</td>
+                <td class="is-size-8">{{ titleCase(item.subcategory) }}</td>
                 <td class="is-size-8">{{item.cost}} {{item.cost_cur}}</td>
                 <td class='has-text-right'>
                     <a v-if="is_backpack == false" class='btn_add_item'>
@@ -35,6 +37,8 @@
 </template>
 
 <script>
+import _ from 'lodash';
+
 export default {
   name: 'TableGear',
     props: {
@@ -49,6 +53,12 @@ export default {
             default: () => []
         },
     },
+    methods: {
+// TODO: move this to a mixin
+        titleCase(string) {
+            return _.startCase(string.replace('_', ' '));
+        }
+    }
 }
 </script>
 
