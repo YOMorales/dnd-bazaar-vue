@@ -50,6 +50,8 @@
 
 <script>
 import _ from 'lodash';
+import {DataTable} from 'simple-datatables';
+import 'simple-datatables/dist/style.css';
 
 export default {
   name: 'TableArmor',
@@ -64,13 +66,56 @@ export default {
             required: true,
             default: () => []
         },
+        layout: {
+            type: Object,
+            required: false,
+            default: () => {
+                return {
+                    top: '{search}',
+                    bottom: '{pager}'
+                };
+            }
+        },
+        fixedColumns: {
+            type: Boolean,
+            required: false,
+            default: true
+        },
+        fixedHeight: {
+            type: Boolean,
+            required: false,
+            default: true
+        },
+        labels: {
+            type: Object,
+            required: false,
+            default: () => {
+                return {
+                    placeholder: "Search...",
+                    noRows: "",
+                };
+            }
+        },
+    },
+    data() {
+        return {
+            dataTable: null,
+        };
     },
     methods: {
 // TODO: move this to a mixin
         titleCase(string) {
             return _.startCase(string.replace('_', ' '));
         }
-    }
+    },
+    mounted() {
+        this.dataTable = new DataTable(this.$el, {
+            layout: this.layout,
+            fixedColumns: this.fixedColumns,
+            fixedHeight: this.fixedHeight,
+            labels: this.labels
+        });
+    },
 }
 </script>
 
