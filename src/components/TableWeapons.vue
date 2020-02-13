@@ -45,10 +45,12 @@
 </template>
 
 <script>
-import _ from 'lodash';
+import CommonMethods from './mixins/CommonMethods';
+import RenderDatatable from './mixins/RenderDatatable';
 
 export default {
   name: 'TableWeapons',
+  mixins: [CommonMethods, RenderDatatable],
     props: {
         is_backpack: {
             type: Boolean,
@@ -61,12 +63,6 @@ export default {
             default: () => []
         },
     },
-    methods: {
-// TODO: move this to a mixin
-        titleCase(string) {
-            return _.startCase(string.replace('_', ' '));
-        }
-    }
 }
 </script>
 
