@@ -6,3 +6,39 @@ body {
     background: #FFF url('../img/app/bkg_app.png') repeat left top;
 }
 
+/* @todo: Override bulma classes properly */
+.section {
+    padding: 2rem 1.5rem;
+}
+.tile.is-child {
+    padding: 0.75rem;
+}
+
+/* my styles */
+/* @todo: Move these to CSS of each component */
+.is-size-8 {
+    font-size: 0.85rem;
+}
+ul.unstyled {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#container_shop_backpack, #container_widgets {
+    max-width: 1252px;
+}
+table.dataTable-table thead th {
+    color: #DBDBDB;
+}
+    table.dataTable-table thead th.asc {
+        color: #23D160;
+    }
+    table.dataTable-table thead th.desc {
+        color: #3273DC;
+    }
+.dataTable-sorter::before {
+    display: none;
+}
+.dataTable-sorter::after {
+    display: none;
+}
