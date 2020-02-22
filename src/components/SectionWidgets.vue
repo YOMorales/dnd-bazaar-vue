@@ -21,13 +21,13 @@
                         <WidgetWeight title="Weight"/>
                     </div>
                     <div class="tile is-parent is-3">
-                        <WidgetMoney title="Money Left"/>
+                        <WidgetMoney title="Money Left" type='remaining' />
                     </div>
                     <div class="tile is-parent is-3">
-                        <WidgetMoney title="Money Spent"/>
+                        <WidgetMoney title="Money Spent" type='spent'/>
                     </div>
                     <div class="tile is-parent is-3">
-                        <WidgetMoney title="Money Gained"/>
+                        <WidgetMoney title="Money Gained" type='gained'/>
                     </div>
                 </div>
             </div>
