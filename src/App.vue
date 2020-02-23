@@ -28,6 +28,7 @@ const store = new Vuex.Store({
       spent_gp: 0,
       spent_sp: 0,
       spent_cp: 0,
+      total_weight: 33,
     },
     mutations: {
       addMoney(state, payload) {
@@ -38,6 +39,15 @@ const store = new Vuex.Store({
       },
       addToMoneySpent(state, payload) {
         return state[`spent_${payload.currency}`] += Number(payload.amount);
+      },
+      addToWeight(state, payload) {
+        return state.total_weight += Number(payload.weight);
+      },
+      subtractFromWeight(state, payload) {
+        return state.total_weight -= Number(payload.weight);
+      },
+      subtractMoney(state, payload) {
+        return state[`remaining_${payload.currency}`] -= Number(payload.amount);
       },
     }
 });

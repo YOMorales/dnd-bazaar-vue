@@ -15,6 +15,8 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'WidgetWeight',
   props: {
@@ -23,10 +25,11 @@ export default {
         required: true
     }
   },
-    data() {
-        return {
-            total_weight: 10,
-        }
+    computed: {
+        ...mapState([
+            // map these computed properties to their equivalents in $store.state
+            'total_weight',
+        ]),
     },
 }
 </script>
