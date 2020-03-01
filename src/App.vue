@@ -8,49 +8,10 @@
 
 <script>
 import axios from 'axios';
-import Vue from 'vue';
-import Vuex from 'vuex';
 import SectionWidgets from './components/SectionWidgets.vue';
 import SectionTables from './components/SectionTables.vue';
 
 const rest_api_url = 'http://localhost:3000/';
-
-Vue.use(Vuex);
-
-const store = new Vuex.Store({
-    state: {
-      gained_gp: 3,
-      gained_sp: 2,
-      gained_cp: 1,
-      remaining_gp: 20,
-      remaining_sp: 0,
-      remaining_cp: 5,
-      spent_gp: 0,
-      spent_sp: 0,
-      spent_cp: 0,
-      total_weight: 33,
-    },
-    mutations: {
-      addMoney(state, payload) {
-        return state[`remaining_${payload.currency}`] += Number(payload.amount);
-      },
-      addToMoneyGained(state, payload) {
-        return state[`gained_${payload.currency}`] += Number(payload.amount);
-      },
-      addToMoneySpent(state, payload) {
-        return state[`spent_${payload.currency}`] += Number(payload.amount);
-      },
-      addToWeight(state, payload) {
-        return state.total_weight += Number(payload.weight);
-      },
-      subtractFromWeight(state, payload) {
-        return state.total_weight -= Number(payload.weight);
-      },
-      subtractMoney(state, payload) {
-        return state[`remaining_${payload.currency}`] -= Number(payload.amount);
-      },
-    }
-});
 
 export default {
   name: 'App',
