@@ -10,6 +10,7 @@
 import axios from 'axios';
 import SectionWidgets from './components/SectionWidgets.vue';
 import SectionTables from './components/SectionTables.vue';
+import { store } from './store/index.js';
 
 const rest_api_url = 'http://localhost:3000/';
 
