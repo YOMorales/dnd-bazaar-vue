@@ -49,6 +49,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
 import CommonMethods from './mixins/CommonMethods';
 import RenderDatatable from './mixins/RenderDatatable';
 
@@ -67,6 +68,12 @@ export default {
             default: () => []
         },
     },
+    methods: {
+        ...mapActions([
+            'buyItem',
+            'sellItem'
+        ])
+    }
 }
 </script>
 
