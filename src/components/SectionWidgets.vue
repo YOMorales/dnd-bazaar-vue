@@ -10,7 +10,7 @@
                             id="select_shop"
                             class="is-small is-info"
                             v-bind:options="shop_types"
-                            v-on:option-selected="$emit('shop-selected', $event)"
+                            v-on:option-selected="loadItems($event)"
                             />
                     </div>
                 </div>
@@ -37,6 +37,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex';
+
 import BaseSelect from './BaseSelect.vue';
 import WidgetWeight from './WidgetWeight.vue';
 import WidgetMoney from './WidgetMoney.vue';
@@ -58,7 +60,10 @@ export default {
     }
   },
     methods: {
-    }
+        ...mapActions([
+            'loadItems'
+        ])
+    },
 }
 </script>
 

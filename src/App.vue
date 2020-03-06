@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-      <SectionWidgets v-on:shop-selected="loadItems" />
+      <SectionWidgets />
 
-      <SectionTables v-bind:selected_shop='selected_shop' v-bind:shop_items='shop_items' v-bind:backpack_items='backpack_items' />
+      <SectionTables />
   </div>
 </template>
 

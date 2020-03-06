@@ -52,9 +52,12 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 import TableArmor from './TableArmor.vue';
 import TableWeapons from './TableWeapons.vue';
 import TableGear from './TableGear.vue';
+
 
 export default {
   name: 'SectionTables',
@@ -63,23 +66,15 @@ export default {
     TableWeapons,
     TableGear
   },
-    props: {
-        selected_shop: {
-            type: String,
-            required: true,
-            default: null
-        },
-        shop_items: {
-            type: Array,
-            required: true,
-            default: () => []
-        },
-        backpack_items: {
-            type: Array,
-            required: true,
-            default: () => []
-        },
+    computed: {
+        ...mapState({
+            selected_shop: state => state.shop.selected_shop,
+            shop_items: state => state.shop.shop_items,
+            backpack_items: state => state.backpack.backpack_items
+        })
     },
+    mounted() {
+    }
 }
 </script>
 
