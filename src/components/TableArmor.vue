@@ -14,7 +14,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr v-for="item in items" :data-item-id='item.id' :key='`armor_${item.id}`'>
+            <tr v-for="item in items" :key='`armor_${item.id}`'>
                 <td class='has-text-centered'>
                     <span class='icon has-text-info tooltip' :data-tooltip='item.notes'>
                         <i class='fas fa-shield-alt'></i>
@@ -32,7 +32,7 @@
                     </span>
                 </td>
                 <td class='has-text-right'>
-                    <a v-if="is_backpack == false" class='btn_add_item'>
+                    <a v-if="is_backpack == false" class='btn_add_item' :data-item-id='item.id' @click="buyItem($event)">
                         <span class='icon has-text-success'>
                             <i class='fas fa-plus-square'></i>
                         </span>
@@ -68,12 +68,10 @@ export default {
             default: () => []
         },
     },
-    methods: {
-        ...mapActions([
-            'buyItem',
-            'sellItem'
-        ])
-    }
+    methods: mapActions([
+        'buyItem',
+        'sellItem'
+    ])
 }
 </script>
 
