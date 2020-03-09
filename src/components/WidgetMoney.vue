@@ -54,10 +54,17 @@ export default {
     computed: {
         // someLocalProperty() {},
         // with object-spread operator (...) mix this with the other local computed properties
-        ...mapState([
-            // map these computed properties to their equivalents in $store.state
-            'gained_gp', 'gained_sp', 'gained_cp', 'remaining_gp', 'remaining_sp', 'remaining_cp', 'spent_gp', 'spent_sp', 'spent_cp'
-        ]),
+        ...mapState({
+            gained_gp: state => state.purse.gained_gp,
+            gained_sp: state => state.purse.gained_sp,
+            gained_cp: state => state.purse.gained_cp,
+            remaining_gp: state => state.purse.remaining_gp,
+            remaining_sp: state => state.purse.remaining_sp,
+            remaining_cp: state => state.purse.remaining_cp,
+            spent_gp: state => state.purse.spent_gp,
+            spent_sp: state => state.purse.spent_sp,
+            spent_cp: state => state.purse.spent_cp,
+        })
     },
 }
 </script>
