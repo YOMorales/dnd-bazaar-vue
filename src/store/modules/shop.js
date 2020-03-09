@@ -7,6 +7,11 @@ export const shop = {
         selected_shop: '',
         shop_items: []
     },
+    getters: {
+        findItemById: (state) => (item_id) => {
+            return state.shop_items.find(item => item.id === item_id);
+        }
+    },
     mutations: {
         changeShop(state, payload) {
             state.selected_shop = payload.selected_shop;
@@ -32,8 +37,27 @@ export const shop = {
                 });
         },
 
-        buyItem(state) {
-console.log(state);
+        buyItem({ getters, commit }, selected_item) {
+            let item_id = Number(selected_item.target.parentElement.parentElement.dataset.itemId);
+
+            let item_to_buy = getters.findItemById(item_id);
+
+            // add cost to Spent
+            commit('addToMoneySpent', {
+                amount: item_to_buy.cost,
+                currency: item_to_buy.cost_cur
+            });
+
+            // subtract cost from Money remaining
+            commit('subtractMoney', {
+                amount: item_to_buy.cost,
+                currency: item_to_buy.cost_cur
+            });
+
+            // add weight to total Weight
+            commit('addToWeight', {
+                weight: item_to_buy.weight
+            })
         },
     }
 };
