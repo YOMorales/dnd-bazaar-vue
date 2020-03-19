@@ -37,10 +37,38 @@ export const shop = {
                 });
         },
 
-        buyItem({ getters, commit }, selected_item) {
+        buyItem({ getters, commit, dispatch, rootState }, selected_item) {
             let item_id = Number(selected_item.target.parentElement.parentElement.dataset.itemId);
 
             let item_to_buy = getters.findItemById(item_id);
+
+            // check if has enough money and can buy
+            let can_buy_item = getters.canBuy({cost: item_to_buy.cost, cost_cur: item_to_buy.cost_cur});
+            if (! can_buy_item) {
+                // checks if a higher currency can be converted, and how much
+                let {higher_currency_amount_needed, higher_currency} = getters.checkMoneyConversion({cost: item_to_buy.cost, cost_cur: item_to_buy.cost_cur});
+
+                if (higher_currency_amount_needed <= rootState.purse[`remaining_${higher_currency}`]) {
+                    // TODO: doing a simple alert for now; improve later
+                    let will_convert = confirm(`You don't have ${item_to_buy.cost} ${item_to_buy.cost_cur} to buy that item.\rBut you can convert ${higher_currency_amount_needed} ${higher_currency} to cover that cost.`);
+
+                    if (will_convert) {
+                        dispatch('convertMoney', {
+                            from_currency_amount: higher_currency_amount_needed,
+                            from_currency: higher_currency,
+                            to_currency: item_to_buy.cost_cur
+                        });
+                    } else {
+                        // TODO: implement Noty or a cool alert; in a separate method?
+                        console.log('cannot buy 1');
+                        return false;
+                    }
+                } else {
+                    // TODO: implement Noty or a cool alert; in a separate method?
+                    console.log('cannot buy 2');
+                    return false;
+                }
+            }
 
             // add cost to Spent
             commit('addToMoneySpent', {
