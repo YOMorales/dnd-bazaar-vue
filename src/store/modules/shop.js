@@ -21,7 +21,7 @@ export const shop = {
         },
     },
     actions: {
-        fetchItems({ state, commit }, selected_shop) {
+        fetchShopItems({ state, commit }, selected_shop) {
             commit('changeShop', {selected_shop: selected_shop});
             // gets items for the shop
             axios.get(rest_api_url + selected_shop)

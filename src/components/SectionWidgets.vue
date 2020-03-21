@@ -10,7 +10,7 @@
                             id="select_shop"
                             class="is-small is-info"
                             v-bind:options="shop_types"
-                            v-on:option-selected="fetchItems($event)"
+                            v-on:option-selected="fetchAllItems($event)"
                             />
                     </div>
                 </div>
@@ -37,8 +37,6 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex';
-
 import BaseSelect from './BaseSelect.vue';
 import WidgetWeight from './WidgetWeight.vue';
 import WidgetMoney from './WidgetMoney.vue';
@@ -60,9 +58,10 @@ export default {
     }
   },
     methods: {
-        ...mapActions([
-            'fetchItems'
-        ])
+        fetchAllItems(event) {
+            this.$store.dispatch('fetchShopItems', event);
+            this.$store.dispatch('fetchBackpackItems', event);
+        },
     },
 }
 </script>
