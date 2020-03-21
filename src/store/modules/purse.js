@@ -23,7 +23,7 @@ export const purse = {
         canBuy: (state) => (params) => {
             return params.cost <= state[`remaining_${params.cost_cur}`];
         },
-        checkMoneyConversion: (getters) => (params) => {
+        checkMoneyConversion: (state, getters) => (params) => {
             var higher_currency = null;
             var higher_currency_amount_needed = null;
 
