@@ -16,7 +16,7 @@ export const backpack = {
         },
     },
     actions: {
-        loadItems({ state, commit }, selected_backpack) {
+        fetchItems({ state, commit }, selected_backpack) {
             commit('changeBackpack', {selected_backpack: selected_backpack});
             // gets items for the backpack
             axios.get(rest_api_url + 'bp_' + selected_backpack)

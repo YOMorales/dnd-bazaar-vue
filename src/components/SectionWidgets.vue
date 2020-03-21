@@ -10,7 +10,7 @@
                             id="select_shop"
                             class="is-small is-info"
                             v-bind:options="shop_types"
-                            v-on:option-selected="loadItems($event)"
+                            v-on:option-selected="fetchItems($event)"
                             />
                     </div>
                 </div>
@@ -61,7 +61,7 @@ export default {
   },
     methods: {
         ...mapActions([
-            'loadItems'
+            'fetchItems'
         ])
     },
 }
