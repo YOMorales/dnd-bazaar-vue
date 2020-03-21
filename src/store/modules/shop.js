@@ -38,7 +38,7 @@ export const shop = {
         },
 
         buyItem({ getters, commit, dispatch, rootState }, selected_item) {
-            let item_id = Number(selected_item.target.parentElement.parentElement.dataset.itemId);
+            let item_id = Number(selected_item.target.closest('.btn_add_item').dataset.itemId);
 
             let item_to_buy = getters.findItemById(item_id);
 
