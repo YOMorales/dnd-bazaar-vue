@@ -8,7 +8,7 @@ export const shop = {
         shop_items: []
     },
     getters: {
-        findItemById: (state) => (item_id) => {
+        findShopItemById: (state) => (item_id) => {
             return state.shop_items.find(item => item.id === item_id);
         }
     },
@@ -40,7 +40,7 @@ export const shop = {
         buyItem({ getters, commit, dispatch, rootState }, selected_item) {
             let item_id = Number(selected_item.target.closest('.btn_add_item').dataset.itemId);
 
-            let item_to_buy = getters.findItemById(item_id);
+            let item_to_buy = getters.findShopItemById(item_id);
 
             // check if has enough money and can buy
             let can_buy_item = getters.canBuy({cost: item_to_buy.cost, cost_cur: item_to_buy.cost_cur});

@@ -7,6 +7,11 @@ export const backpack = {
         selected_backpack: '',
         backpack_items: []
     },
+    getters: {
+        findBackpackItemById: (state) => (item_id) => {
+            return state.backpack_items.find(item => item.id === item_id);
+        }
+    },
     mutations: {
         changeBackpack(state, payload) {
             state.selected_backpack = payload.selected_backpack;
