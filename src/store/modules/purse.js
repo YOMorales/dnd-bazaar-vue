@@ -4,6 +4,7 @@ const currency_conversions = {
     'sp': {'cp': 10, 'gp': 0.10},
     'gp': {'cp': 100, 'sp': 10},
 };
+const sell_cost_percentage = 0.50;
 
 export const purse = {
     state: {
@@ -22,6 +23,9 @@ export const purse = {
     getters: {
         canBuy: (state) => (params) => {
             return params.cost <= state[`remaining_${params.cost_cur}`];
+        },
+        getSellPrice: () => (params) => {
+            return params.cost * sell_cost_percentage;
         },
         checkMoneyConversion: (state, getters) => (params) => {
             var higher_currency = null;
