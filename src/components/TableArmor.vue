@@ -37,7 +37,7 @@
                             <i class='fas fa-plus-square'></i>
                         </span>
                     </a>
-                    <a v-else class='btn_subtract_item'>
+                    <a v-else class='btn_subtract_item' :data-item-id='item.id' @click="sellItem($event)">
                         <span class='icon has-text-danger'>
                             <i class='fas fa-minus-square'></i>
                         </span>
